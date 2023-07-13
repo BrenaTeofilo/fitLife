@@ -4,12 +4,15 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -26,16 +29,14 @@ class MainActivity : AppCompatActivity() {
             MainItem(
                 id = 1,
                 drawableId = R.drawable.imc,
-                textStringId = R.string.label_imc,
-                color = Color.GREEN
+                textStringId = R.string.label_imc
             )
         )
         mainItems.add(
             MainItem(
                 id = 2,
                 drawableId = R.drawable.tbm,
-                textStringId = R.string.label_tmb,
-                color = Color.YELLOW
+                textStringId = R.string.label_tmb
             )
         )
 
@@ -45,12 +46,12 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this@MainActivity, ImcActivity::class.java)
                     startActivity(intent)
                 }
+
                 2 -> {
                     val intent = Intent(this@MainActivity, TmbActivity::class.java)
                     startActivity(intent)
                 }
             }
-            Log.i("Teste", "clicou $id!!")
         }
 
         rvMain = findViewById(R.id.rv_main)
@@ -82,11 +83,10 @@ class MainActivity : AppCompatActivity() {
             fun bind(item: MainItem) {
                 val img: ImageView = itemView.findViewById(R.id.item_img_icon)
                 val name: TextView = itemView.findViewById(R.id.item_txt_name)
-                val container: LinearLayout = itemView.findViewById(R.id.item_container_imc)
+                val container: CardView = itemView.findViewById(R.id.card_container)
 
                 img.setImageResource(item.drawableId)
                 name.setText(item.textStringId)
-                container.setBackgroundColor(item.color)
 
                 container.setOnClickListener {
                     onItemClickListener.invoke(item.id)

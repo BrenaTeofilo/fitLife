@@ -2,9 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <color name="cian">#79C7D9</color>
-    <color name="ocean">#50BFAB</color>
-    <color name="pink">#F2D5CE</color>
-    <color name="beige">#FCEFBA</color>
+    <color name="baby_blue">#daeef7</color>
+    <color name="ocean">#1c5f7b</color>
+    <color name="ocean_dark">#134256</color>
 </resources>

@@ -1,7 +1,8 @@
 package com.example.fitlife
 
-interface OnItemClickListener {
+import com.example.fitlife.model.Calc
 
+interface OnItemClickListener {
     fun onClick(id: Int)
 
 }

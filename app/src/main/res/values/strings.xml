@@ -3,8 +3,10 @@
     <string name="label_imc">IMC</string>
     <string name="label_tmb">TMB</string>
     <string name="imc_desc">IMC é a sigla para Índice de Massa Corporal que serve para avaliar o peso do indivíduo em relação à sua altura e assim indicar se está dentro do peso ideal, acima ou abaixo do peso desejado.\n\nPreencha os campos de peso e altura para descobrir o seu IMC</string>
+    <string name="tmb_desc">TMB é o mínimo de energia necessária para manter as funções do organismo em repouso, \ncomo os batimentos cardíacos, a pressão arterial, a respiração e a manutenção da temperatura corporal.</string>
     <string name="weight">Peso (Kg)</string>
     <string name="height">Altura (cm)</string>
+    <string name="age">Idade</string>
     <string name="calc">Calcular</string>
     <string name="fields_messages">Todos os campos devem ser maiores que zero</string>
 
@@ -18,8 +20,11 @@
     <string name="imc_extreme_weight">Extremamente obeso</string>
 
     <string name="imc_response">Seu IMC é: %1$.2f</string>
+    <string name="tmb_response">Seu TMB é: %1$.2f</string>
     <string name="list_response">Resultado: %1$.2f, Data: %2$s</string>
     <string name="save">Salvar</string>
     <string name="saved">Registro salvo com sucesso</string>
+    <string name="historic">Historico</string>
+    <string name="delete_message">Deseja excluir esse dado?</string>
 
 </resources>
